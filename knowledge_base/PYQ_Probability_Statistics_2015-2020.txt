@@ -1,0 +1,370 @@
+# Probability and Statistics: Previous Year Questions (2015-2020)
+
+## Probability
+
+### Question 1 (JEE Main 2015)
+
+**Question:** A box contains 5 green and 3 blue balls. Another box contains 4 green and 6 blue balls. One box is selected at random and a ball is drawn from it. If the ball drawn is green, what is the probability that it was drawn from the first box?
+
+**Solution:**
+Step 1: Let's define the events:
+- A: the first box is selected
+- B: the second box is selected
+- G: the ball drawn is green
+
+Step 2: We need to find P(A|G), the probability that the first box was selected given that the ball drawn is green.
+
+Step 3: Using Bayes' theorem, we have:
+$P(A|G) = \frac{P(G|A) \cdot P(A)}{P(G)}$
+
+Step 4: Let's calculate each probability:
+- P(A) = P(B) = 1/2 (probability of selecting either box)
+- P(G|A) = 5/8 (probability of drawing a green ball from the first box)
+- P(G|B) = 4/10 = 2/5 (probability of drawing a green ball from the second box)
+
+Step 5: We can calculate P(G) using the law of total probability:
+$P(G) = P(G|A) \cdot P(A) + P(G|B) \cdot P(B)$
+$P(G) = \frac{5}{8} \cdot \frac{1}{2} + \frac{2}{5} \cdot \frac{1}{2}$
+$P(G) = \frac{5}{16} + \frac{2}{10} = \frac{5}{16} + \frac{4}{20} = \frac{25}{80} + \frac{16}{80} = \frac{41}{80}$
+
+Step 6: Now, we can calculate P(A|G):
+$P(A|G) = \frac{P(G|A) \cdot P(A)}{P(G)} = \frac{\frac{5}{8} \cdot \frac{1}{2}}{\frac{41}{80}} = \frac{\frac{5}{16}}{\frac{41}{80}} = \frac{5}{16} \cdot \frac{80}{41} = \frac{25}{41}$
+
+Therefore, the probability that the green ball was drawn from the first box is $\frac{25}{41}$.
+
+### Question 2 (JEE Advanced 2016)
+
+**Question:** Three distinct numbers are selected at random from the set {1, 2, 3, ..., 20}. The probability that the selected numbers form an arithmetic progression is
+
+**Solution:**
+Step 1: Let's denote the three selected numbers as a, a+d, and a+2d, where a is the first term and d is the common difference of the arithmetic progression.
+
+Step 2: For these numbers to be in the set {1, 2, 3, ..., 20}, we need:
+- a ≥ 1
+- a+2d ≤ 20
+
+Step 3: The total number of ways to select 3 distinct numbers from a set of 20 numbers is $\binom{20}{3} = \frac{20!}{3!(20-3)!} = \frac{20 \cdot 19 \cdot 18}{3 \cdot 2 \cdot 1} = \frac{6840}{6} = 1140$.
+
+Step 4: Now, let's count the number of ways to select 3 numbers that form an arithmetic progression.
+
+Step 5: For a given value of a and d, the three numbers a, a+d, and a+2d form an arithmetic progression. We need to count the number of valid pairs (a, d).
+
+Step 6: The constraints on a and d are:
+- a ≥ 1
+- a+2d ≤ 20
+- d ≠ 0 (to ensure distinct numbers)
+
+Step 7: Rearranging the second constraint, we get a ≤ 20-2d.
+
+Step 8: Combining the constraints on a, we have 1 ≤ a ≤ 20-2d.
+
+Step 9: For a valid value of d, the number of possible values of a is (20-2d) - 1 + 1 = 20-2d.
+
+Step 10: Now, let's consider the possible values of d:
+- If d > 0, then d can be 1, 2, 3, ..., 9 (since if d ≥ 10, then a+2d ≥ 1+2(10) = 21 > 20).
+- If d < 0, then d can be -1, -2, -3, ..., -9 (since if d ≤ -10, then a ≥ 1 implies a+2d ≤ 1+2(-10) = -19, which means a+d < 0, which is outside our set).
+
+Step 11: For d = 1, the number of valid values of a is 20-2(1) = 18.
+For d = 2, the number of valid values of a is 20-2(2) = 16.
+For d = 3, the number of valid values of a is 20-2(3) = 14.
+...
+For d = 9, the number of valid values of a is 20-2(9) = 2.
+
+Step 12: Similarly, for d = -1, the number of valid values of a is 20-2(-1) = 22, but a ≤ 20, so there are 20 valid values of a.
+For d = -2, the number of valid values of a is 20-2(-2) = 24, but a ≤ 20, so there are 20 valid values of a.
+...
+For d = -9, the number of valid values of a is 20-2(-9) = 38, but a ≤ 20, so there are 20 valid values of a.
+
+Step 13: However, we need to be careful about the constraint a+d ≥ 1 for negative values of d.
+For d = -1, a+d ≥ 1 implies a ≥ 2, so there are 20-2+1 = 19 valid values of a.
+For d = -2, a+d ≥ 1 implies a ≥ 3, so there are 20-3+1 = 18 valid values of a.
+...
+For d = -9, a+d ≥ 1 implies a ≥ 10, so there are 20-10+1 = 11 valid values of a.
+
+Step 14: Now, let's count the total number of valid pairs (a, d):
+For positive d: 18 + 16 + 14 + 12 + 10 + 8 + 6 + 4 + 2 = 90.
+For negative d: 19 + 18 + 17 + 16 + 15 + 14 + 13 + 12 + 11 = 135.
+
+Step 15: Therefore, the total number of ways to select 3 numbers that form an arithmetic progression is 90 + 135 = 225.
+
+Step 16: The probability is $\frac{225}{1140} = \frac{5}{19}$.
+
+Therefore, the probability that the selected numbers form an arithmetic progression is $\frac{5}{19}$.
+
+### Question 3 (JEE Main 2017)
+
+**Question:** A bag contains 4 red and 6 black balls. A ball is drawn at random and its color is noted. Then, the ball is returned to the bag along with 2 more balls of the same color. Now, a ball is drawn at random from the bag. The probability that the second ball drawn is red is
+
+**Solution:**
+Step 1: Let's define the events:
+- R₁: the first ball drawn is red
+- B₁: the first ball drawn is black
+- R₂: the second ball drawn is red
+
+Step 2: We need to find P(R₂), the probability that the second ball drawn is red.
+
+Step 3: Using the law of total probability, we have:
+$P(R₂) = P(R₂|R₁) \cdot P(R₁) + P(R₂|B₁) \cdot P(B₁)$
+
+Step 4: Let's calculate each probability:
+- P(R₁) = 4/10 = 2/5 (probability of drawing a red ball in the first draw)
+- P(B₁) = 6/10 = 3/5 (probability of drawing a black ball in the first draw)
+
+Step 5: If the first ball drawn is red, then after returning it along with 2 more red balls, the bag contains 4+2=6 red balls and 6 black balls, for a total of 12 balls. Therefore, P(R₂|R₁) = 6/12 = 1/2.
+
+Step 6: If the first ball drawn is black, then after returning it along with 2 more black balls, the bag contains 4 red balls and 6+2=8 black balls, for a total of 12 balls. Therefore, P(R₂|B₁) = 4/12 = 1/3.
+
+Step 7: Now, we can calculate P(R₂):
+$P(R₂) = P(R₂|R₁) \cdot P(R₁) + P(R₂|B₁) \cdot P(B₁)$
+$P(R₂) = \frac{1}{2} \cdot \frac{2}{5} + \frac{1}{3} \cdot \frac{3}{5}$
+$P(R₂) = \frac{1}{5} + \frac{1}{5} = \frac{2}{5}$
+
+Therefore, the probability that the second ball drawn is red is $\frac{2}{5}$.
+
+### Question 4 (JEE Advanced 2018)
+
+**Question:** A coin is biased so that the head is 3 times as likely to occur as the tail. If the coin is tossed 4 times, the probability of getting at least one tail is
+
+**Solution:**
+Step 1: Let's denote the probability of getting a head as p and the probability of getting a tail as q.
+
+Step 2: Given that the head is 3 times as likely to occur as the tail, we have p = 3q.
+
+Step 3: Since p + q = 1, we have 3q + q = 1, which gives q = 1/4 and p = 3/4.
+
+Step 4: The probability of getting at least one tail in 4 tosses is 1 minus the probability of getting no tails (i.e., all heads).
+
+Step 5: The probability of getting all heads in 4 tosses is p⁴ = (3/4)⁴ = 81/256.
+
+Step 6: Therefore, the probability of getting at least one tail is 1 - 81/256 = 175/256.
+
+Therefore, the probability of getting at least one tail is $\frac{175}{256}$.
+
+### Question 5 (JEE Main 2019)
+
+**Question:** A box contains 10 screws, of which 3 are defective. Two screws are drawn at random without replacement. The probability that at least one of the screws drawn is defective is
+
+**Solution:**
+Step 1: Let's define the event A as "at least one of the screws drawn is defective".
+
+Step 2: The probability of A is 1 minus the probability of the complementary event, which is "none of the screws drawn is defective".
+
+Step 3: The probability of drawing a non-defective screw in the first draw is 7/10.
+
+Step 4: Given that the first screw drawn is non-defective, the probability of drawing a non-defective screw in the second draw is 6/9 = 2/3.
+
+Step 5: Therefore, the probability of drawing two non-defective screws is (7/10) × (2/3) = 14/30 = 7/15.
+
+Step 6: The probability of at least one defective screw is 1 - 7/15 = 8/15.
+
+Therefore, the probability that at least one of the screws drawn is defective is $\frac{8}{15}$.
+
+### Question 6 (JEE Advanced 2020)
+
+**Question:** A box contains 15 balls numbered 1, 2, 3, ..., 15. Three balls are drawn at random without replacement. The probability that the sum of the numbers on the balls drawn is 30 is
+
+**Solution:**
+Step 1: The total number of ways to draw 3 balls from 15 balls is $\binom{15}{3} = \frac{15!}{3!(15-3)!} = \frac{15 \cdot 14 \cdot 13}{3 \cdot 2 \cdot 1} = 455$.
+
+Step 2: Now, we need to count the number of ways to draw 3 balls such that the sum of the numbers on the balls is 30.
+
+Step 3: Let's denote the numbers on the three balls as a, b, and c, where 1 ≤ a, b, c ≤ 15 and a + b + c = 30.
+
+Step 4: Since we're drawing without replacement, a, b, and c must be distinct.
+
+Step 5: Let's list all the possible combinations of three distinct numbers from the set {1, 2, 3, ..., 15} that sum to 30:
+- 5, 10, 15
+- 6, 9, 15
+- 6, 10, 14
+- 7, 8, 15
+- 7, 9, 14
+- 7, 10, 13
+- 7, 11, 12
+- 8, 9, 13
+- 8, 10, 12
+- 9, 10, 11
+
+Step 6: There are 10 such combinations.
+
+Step 7: The probability is $\frac{10}{455} = \frac{2}{91}$.
+
+Therefore, the probability that the sum of the numbers on the balls drawn is 30 is $\frac{2}{91}$.
+
+## Binomial Theorem and Counting
+
+### Question 7 (JEE Main 2015)
+
+**Question:** The coefficient of x⁵ in the expansion of (1 + x)^10 - (1 - x)^10 is
+
+**Solution:**
+Step 1: Let's denote the coefficient of x^r in the expansion of (1 + x)^n as $\binom{n}{r}$.
+
+Step 2: The expansion of (1 + x)^10 is $\sum_{r=0}^{10} \binom{10}{r} x^r$.
+
+Step 3: The expansion of (1 - x)^10 is $\sum_{r=0}^{10} \binom{10}{r} (-x)^r = \sum_{r=0}^{10} \binom{10}{r} (-1)^r x^r$.
+
+Step 4: Therefore, the expansion of (1 + x)^10 - (1 - x)^10 is $\sum_{r=0}^{10} \binom{10}{r} x^r - \sum_{r=0}^{10} \binom{10}{r} (-1)^r x^r = \sum_{r=0}^{10} \binom{10}{r} (1 - (-1)^r) x^r$.
+
+Step 5: For r = 5, the coefficient is $\binom{10}{5} (1 - (-1)^5) = \binom{10}{5} (1 - (-1)) = \binom{10}{5} \cdot 2 = 252 \cdot 2 = 504$.
+
+Therefore, the coefficient of x⁵ in the expansion of (1 + x)^10 - (1 - x)^10 is 504.
+
+### Question 8 (JEE Advanced 2016)
+
+**Question:** The coefficient of x^8 in the expansion of (1 + x + x^2)^6 is
+
+**Solution:**
+Step 1: We can use the multinomial theorem to expand (1 + x + x^2)^6.
+
+Step 2: According to the multinomial theorem, the coefficient of x^n in the expansion of (a + b + c)^m is $\sum \binom{m}{i,j,k} a^i b^j c^k$, where the sum is over all non-negative integers i, j, and k such that i + j + k = m and j + 2k = n.
+
+Step 3: In our case, a = 1, b = x, c = x^2, m = 6, and n = 8.
+
+Step 4: We need to find all non-negative integers i, j, and k such that i + j + k = 6 and j + 2k = 8.
+
+Step 5: From i + j + k = 6, we get i = 6 - j - k.
+
+Step 6: Substituting this into j + 2k = 8, we get (6 - i - k) + 2k = 8, which simplifies to 6 - i + k = 8, or i = k - 2.
+
+Step 7: Since i must be non-negative, we have k ≥ 2.
+
+Step 8: Also, since k ≤ 6 (as i + j + k = 6 and i, j ≥ 0), we have 2 ≤ k ≤ 6.
+
+Step 9: For k = 2, we get i = 0 and j = 4.
+For k = 3, we get i = 1 and j = 2.
+For k = 4, we get i = 2 and j = 0.
+
+Step 10: For k = 5 and k = 6, we get negative values of i, which is not valid.
+
+Step 11: Now, let's calculate the multinomial coefficient for each valid combination of i, j, and k:
+For i = 0, j = 4, k = 2: $\binom{6}{0,4,2} = \frac{6!}{0!4!2!} = \frac{720}{48} = 15$.
+For i = 1, j = 2, k = 3: $\binom{6}{1,2,3} = \frac{6!}{1!2!3!} = \frac{720}{12} = 60$.
+For i = 2, j = 0, k = 4: $\binom{6}{2,0,4} = \frac{6!}{2!0!4!} = \frac{720}{48} = 15$.
+
+Step 12: Therefore, the coefficient of x^8 in the expansion of (1 + x + x^2)^6 is 15 + 60 + 15 = 90.
+
+Therefore, the coefficient of x^8 in the expansion of (1 + x + x^2)^6 is 90.
+
+### Question 9 (JEE Main 2017)
+
+**Question:** The number of ways in which 5 different toys can be distributed among 3 children so that each child gets at least one toy is
+
+**Solution:**
+Step 1: We can use the principle of inclusion-exclusion to solve this problem.
+
+Step 2: Let's denote the total number of ways to distribute 5 different toys among 3 children as T, and the number of ways to distribute the toys such that each child gets at least one toy as S.
+
+Step 3: The total number of ways to distribute 5 different toys among 3 children is 3^5 = 243, as each toy can be given to any of the 3 children.
+
+Step 4: Now, let's count the number of ways such that at least one child gets no toy.
+
+Step 5: Let A₁ be the set of distributions where child 1 gets no toy, A₂ be the set of distributions where child 2 gets no toy, and A₃ be the set of distributions where child 3 gets no toy.
+
+Step 6: |A₁| = 2^5 = 32, as each toy can be given to either child 2 or child 3.
+Similarly, |A₂| = |A₃| = 32.
+
+Step 7: |A₁ ∩ A₂| = 1^5 = 1, as each toy must be given to child 3.
+Similarly, |A₁ ∩ A₃| = |A₂ ∩ A₃| = 1.
+
+Step 8: |A₁ ∩ A₂ ∩ A₃| = 0, as it's impossible for all three children to get no toy (since there are 5 toys and only 3 children).
+
+Step 9: Using the principle of inclusion-exclusion, the number of ways such that at least one child gets no toy is:
+|A₁ ∪ A₂ ∪ A₃| = |A₁| + |A₂| + |A₃| - |A₁ ∩ A₂| - |A₁ ∩ A₃| - |A₂ ∩ A₃| + |A₁ ∩ A₂ ∩ A₃|
+= 32 + 32 + 32 - 1 - 1 - 1 + 0
+= 96 - 3 + 0
+= 93
+
+Step 10: Therefore, the number of ways such that each child gets at least one toy is T - |A₁ ∪ A₂ ∪ A₃| = 243 - 93 = 150.
+
+Therefore, the number of ways in which 5 different toys can be distributed among 3 children so that each child gets at least one toy is 150.
+
+### Question 10 (JEE Advanced 2018)
+
+**Question:** The number of ways to distribute 9 distinct objects into 4 distinct groups such that no group is empty is
+
+**Solution:**
+Step 1: We can use the Stirling number of the second kind and the multiplication principle to solve this problem.
+
+Step 2: The Stirling number of the second kind, denoted as S(n, k), counts the number of ways to partition a set of n labeled objects into k non-empty unlabeled subsets.
+
+Step 3: In our case, we need to partition 9 distinct objects into 4 non-empty groups, and the groups are distinct. The number of ways to do this is S(9, 4) × 4!, where the factor 4! accounts for the number of ways to assign the 4 partitions to the 4 distinct groups.
+
+Step 4: The Stirling number of the second kind S(n, k) can be calculated using the formula:
+S(n, k) = (1/k!) × Σ_{i=0}^{k} (-1)^{k-i} × (k choose i) × i^n
+
+Step 5: For S(9, 4), we have:
+S(9, 4) = (1/4!) × [(-1)^0 × (4 choose 4) × 4^9 + (-1)^1 × (4 choose 3) × 3^9 + (-1)^2 × (4 choose 2) × 2^9 + (-1)^3 × (4 choose 1) × 1^9 + (-1)^4 × (4 choose 0) × 0^9]
+= (1/24) × [1 × 1 × 262144 - 1 × 4 × 19683 + 1 × 6 × 512 - 1 × 4 × 1 + 1 × 1 × 0]
+= (1/24) × [262144 - 78732 + 3072 - 4 + 0]
+= (1/24) × 186480
+= 7770
+
+Step 6: Therefore, the number of ways to distribute 9 distinct objects into 4 distinct groups such that no group is empty is S(9, 4) × 4! = 7770 × 24 = 186480.
+
+Therefore, the number of ways to distribute 9 distinct objects into 4 distinct groups such that no group is empty is 186480.
+
+### Question 11 (JEE Main 2019)
+
+**Question:** The number of ways in which 7 different toys can be distributed among 3 children such that each child gets at least one toy is
+
+**Solution:**
+Step 1: We can use the principle of inclusion-exclusion to solve this problem.
+
+Step 2: Let's denote the total number of ways to distribute 7 different toys among 3 children as T, and the number of ways to distribute the toys such that each child gets at least one toy as S.
+
+Step 3: The total number of ways to distribute 7 different toys among 3 children is 3^7 = 2187, as each toy can be given to any of the 3 children.
+
+Step 4: Now, let's count the number of ways such that at least one child gets no toy.
+
+Step 5: Let A₁ be the set of distributions where child 1 gets no toy, A₂ be the set of distributions where child 2 gets no toy, and A₃ be the set of distributions where child 3 gets no toy.
+
+Step 6: |A₁| = 2^7 = 128, as each toy can be given to either child 2 or child 3.
+Similarly, |A₂| = |A₃| = 128.
+
+Step 7: |A₁ ∩ A₂| = 1^7 = 1, as each toy must be given to child 3.
+Similarly, |A₁ ∩ A₃| = |A₂ ∩ A₃| = 1.
+
+Step 8: |A₁ ∩ A₂ ∩ A₃| = 0, as it's impossible for all three children to get no toy (since there are 7 toys and only 3 children).
+
+Step 9: Using the principle of inclusion-exclusion, the number of ways such that at least one child gets no toy is:
+|A₁ ∪ A₂ ∪ A₃| = |A₁| + |A₂| + |A₃| - |A₁ ∩ A₂| - |A₁ ∩ A₃| - |A₂ ∩ A₃| + |A₁ ∩ A₂ ∩ A₃|
+= 128 + 128 + 128 - 1 - 1 - 1 + 0
+= 384 - 3 + 0
+= 381
+
+Step 10: Therefore, the number of ways such that each child gets at least one toy is T - |A₁ ∪ A₂ ∪ A₃| = 2187 - 381 = 1806.
+
+Therefore, the number of ways in which 7 different toys can be distributed among 3 children such that each child gets at least one toy is 1806.
+
+### Question 12 (JEE Advanced 2020)
+
+**Question:** The coefficient of x^10 in the expansion of (1 + x)^5 (1 + x^2)^5 is
+
+**Solution:**
+Step 1: Let's denote the coefficient of x^r in the expansion of (1 + x)^n as $\binom{n}{r}$.
+
+Step 2: The expansion of (1 + x)^5 is $\sum_{r=0}^{5} \binom{5}{r} x^r$.
+
+Step 3: The expansion of (1 + x^2)^5 is $\sum_{s=0}^{5} \binom{5}{s} (x^2)^s = \sum_{s=0}^{5} \binom{5}{s} x^{2s}$.
+
+Step 4: The expansion of (1 + x)^5 (1 + x^2)^5 is the product of these two expansions:
+$(1 + x)^5 (1 + x^2)^5 = \left(\sum_{r=0}^{5} \binom{5}{r} x^r\right) \left(\sum_{s=0}^{5} \binom{5}{s} x^{2s}\right)$
+
+Step 5: The coefficient of x^10 in this product is the sum of the coefficients of x^r in the first factor and x^{10-r} in the second factor, for all possible values of r.
+
+Step 6: For the second factor, the power of x is 2s, so 10-r = 2s, or s = (10-r)/2.
+
+Step 7: For s to be a non-negative integer, r must be even and r ≤ 10.
+
+Step 8: The possible values of r are 0, 2, 4, and 6, 8, 10.
+
+Step 9: For r = 0, s = 5, and the contribution to the coefficient is $\binom{5}{0} \binom{5}{5} = 1 \cdot 1 = 1$.
+For r = 2, s = 4, and the contribution to the coefficient is $\binom{5}{2} \binom{5}{4} = 10 \cdot 5 = 50$.
+For r = 4, s = 3, and the contribution to the coefficient is $\binom{5}{4} \binom{5}{3} = 5 \cdot 10 = 50$.
+For r = 6, s = 2, and the contribution to the coefficient is $\binom{5}{5} \binom{5}{2} = 1 \cdot 10 = 10$.
+For r = 8, s = 1, and the contribution to the coefficient is $\binom{5}{5} \binom{5}{1} = 0 \cdot 5 = 0$ (since $\binom{5}{8} = 0$ as 8 > 5).
+For r = 10, s = 0, and the contribution to the coefficient is $\binom{5}{10} \binom{5}{0} = 0 \cdot 1 = 0$ (since $\binom{5}{10} = 0$ as 10 > 5).
+
+Step 10: Therefore, the coefficient of x^10 in the expansion of (1 + x)^5 (1 + x^2)^5 is 1 + 50 + 50 + 10 + 0 + 0 = 111.
+
+Therefore, the coefficient of x^10 in the expansion of (1 + x)^5 (1 + x^2)^5 is 111.

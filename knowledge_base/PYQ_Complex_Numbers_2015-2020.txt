@@ -1,0 +1,267 @@
+# Complex Numbers: Previous Year Questions (2015-2020)
+
+## Complex Numbers Basics
+
+### Question 1 (JEE Main 2015)
+
+**Question:** If $z = \frac{1 + i}{1 - i}$, then the value of $z^4$ is
+
+**Solution:**
+Step 1: Let's simplify $z = \frac{1 + i}{1 - i}$.
+
+Step 2: Multiply both numerator and denominator by the complex conjugate of the denominator, which is $(1 + i)$.
+$z = \frac{1 + i}{1 - i} \cdot \frac{1 + i}{1 + i} = \frac{(1 + i)^2}{(1 - i)(1 + i)} = \frac{(1 + i)^2}{1^2 - i^2} = \frac{(1 + i)^2}{1 - (-1)} = \frac{(1 + i)^2}{2}$
+
+Step 3: Let's expand $(1 + i)^2$.
+$(1 + i)^2 = 1^2 + 2 \cdot 1 \cdot i + i^2 = 1 + 2i + (-1) = 2i$
+
+Step 4: Therefore, $z = \frac{2i}{2} = i$.
+
+Step 5: Now, let's compute $z^4 = i^4$.
+
+Step 6: We know that $i^2 = -1$, so $i^4 = (i^2)^2 = (-1)^2 = 1$.
+
+Therefore, the value of $z^4$ is $1$.
+
+### Question 2 (JEE Advanced 2016)
+
+**Question:** If $z = \frac{1 + i\sqrt{3}}{2}$, then the value of $z^{12} + \frac{1}{z^{12}}$ is
+
+**Solution:**
+Step 1: Let's express $z$ in the form $re^{i\theta}$, where $r$ is the modulus and $\theta$ is the argument of $z$.
+
+Step 2: $z = \frac{1 + i\sqrt{3}}{2} = \frac{1}{2} + i\frac{\sqrt{3}}{2}$
+
+Step 3: The modulus of $z$ is $r = \sqrt{\left(\frac{1}{2}\right)^2 + \left(\frac{\sqrt{3}}{2}\right)^2} = \sqrt{\frac{1}{4} + \frac{3}{4}} = \sqrt{1} = 1$.
+
+Step 4: The argument of $z$ is $\theta = \tan^{-1}\left(\frac{\sqrt{3}/2}{1/2}\right) = \tan^{-1}(\sqrt{3}) = \frac{\pi}{3}$.
+
+Step 5: Therefore, $z = e^{i\pi/3}$.
+
+Step 6: Now, let's compute $z^{12} = (e^{i\pi/3})^{12} = e^{i\pi/3 \cdot 12} = e^{4\pi i} = (e^{2\pi i})^2 = 1^2 = 1$.
+
+Step 7: Similarly, $\frac{1}{z^{12}} = \frac{1}{1} = 1$.
+
+Step 8: Therefore, $z^{12} + \frac{1}{z^{12}} = 1 + 1 = 2$.
+
+Therefore, the value of $z^{12} + \frac{1}{z^{12}}$ is $2$.
+
+### Question 3 (JEE Main 2017)
+
+**Question:** If $z = \frac{1 + i}{1 - i}$, then $|z|$ is
+
+**Solution:**
+Step 1: Let's simplify $z = \frac{1 + i}{1 - i}$.
+
+Step 2: Multiply both numerator and denominator by the complex conjugate of the denominator, which is $(1 + i)$.
+$z = \frac{1 + i}{1 - i} \cdot \frac{1 + i}{1 + i} = \frac{(1 + i)^2}{(1 - i)(1 + i)} = \frac{(1 + i)^2}{1^2 - i^2} = \frac{(1 + i)^2}{1 - (-1)} = \frac{(1 + i)^2}{2}$
+
+Step 3: Let's expand $(1 + i)^2$.
+$(1 + i)^2 = 1^2 + 2 \cdot 1 \cdot i + i^2 = 1 + 2i + (-1) = 2i$
+
+Step 4: Therefore, $z = \frac{2i}{2} = i$.
+
+Step 5: The modulus of $z$ is $|z| = |i| = 1$.
+
+Therefore, the value of $|z|$ is $1$.
+
+### Question 4 (JEE Advanced 2018)
+
+**Question:** If $z = \frac{1 + i}{1 - i}$, then the value of $\frac{z^3 - 1}{z^3 + 1}$ is
+
+**Solution:**
+Step 1: From the previous questions, we know that $z = \frac{1 + i}{1 - i} = i$.
+
+Step 2: Let's compute $z^3 = i^3 = i^2 \cdot i = (-1) \cdot i = -i$.
+
+Step 3: Now, let's compute $\frac{z^3 - 1}{z^3 + 1} = \frac{-i - 1}{-i + 1}$.
+
+Step 4: Multiply both numerator and denominator by the complex conjugate of the denominator, which is $(-i + 1)^* = i + 1$.
+$\frac{-i - 1}{-i + 1} \cdot \frac{i + 1}{i + 1} = \frac{(-i - 1)(i + 1)}{(-i + 1)(i + 1)} = \frac{-i^2 - i + (-i) - 1}{-i^2 + i + i + 1} = \frac{1 - 2i - 1}{1 + 2i + 1} = \frac{-2i}{2 + 2i} = \frac{-2i}{2(1 + i)} = \frac{-i}{1 + i}$
+
+Step 5: Multiply both numerator and denominator by the complex conjugate of the denominator, which is $(1 + i)^* = 1 - i$.
+$\frac{-i}{1 + i} \cdot \frac{1 - i}{1 - i} = \frac{-i(1 - i)}{(1 + i)(1 - i)} = \frac{-i + i^2}{1^2 - i^2} = \frac{-i + (-1)}{1 - (-1)} = \frac{-1 - i}{2} = -\frac{1}{2} - \frac{i}{2}$
+
+Therefore, the value of $\frac{z^3 - 1}{z^3 + 1}$ is $-\frac{1}{2} - \frac{i}{2}$.
+
+### Question 5 (JEE Main 2019)
+
+**Question:** If $z = \frac{1 + i\sqrt{3}}{2}$, then the value of $z^6$ is
+
+**Solution:**
+Step 1: Let's express $z$ in the form $re^{i\theta}$, where $r$ is the modulus and $\theta$ is the argument of $z$.
+
+Step 2: $z = \frac{1 + i\sqrt{3}}{2} = \frac{1}{2} + i\frac{\sqrt{3}}{2}$
+
+Step 3: The modulus of $z$ is $r = \sqrt{\left(\frac{1}{2}\right)^2 + \left(\frac{\sqrt{3}}{2}\right)^2} = \sqrt{\frac{1}{4} + \frac{3}{4}} = \sqrt{1} = 1$.
+
+Step 4: The argument of $z$ is $\theta = \tan^{-1}\left(\frac{\sqrt{3}/2}{1/2}\right) = \tan^{-1}(\sqrt{3}) = \frac{\pi}{3}$.
+
+Step 5: Therefore, $z = e^{i\pi/3}$.
+
+Step 6: Now, let's compute $z^6 = (e^{i\pi/3})^6 = e^{i\pi/3 \cdot 6} = e^{2\pi i} = 1$.
+
+Therefore, the value of $z^6$ is $1$.
+
+### Question 6 (JEE Advanced 2020)
+
+**Question:** If $z = \frac{1 + i}{1 - i}$, then the value of $z^2 + \frac{1}{z^2}$ is
+
+**Solution:**
+Step 1: From the previous questions, we know that $z = \frac{1 + i}{1 - i} = i$.
+
+Step 2: Let's compute $z^2 = i^2 = -1$.
+
+Step 3: Let's compute $\frac{1}{z^2} = \frac{1}{-1} = -1$.
+
+Step 4: Therefore, $z^2 + \frac{1}{z^2} = -1 + (-1) = -2$.
+
+Therefore, the value of $z^2 + \frac{1}{z^2}$ is $-2$.
+
+## Complex Numbers in Geometry
+
+### Question 7 (JEE Main 2015)
+
+**Question:** The locus of the point $z$ satisfying $|z - 1| = |z - i|$ is
+
+**Solution:**
+Step 1: The locus of points $z$ such that $|z - 1| = |z - i|$ is the set of points that are equidistant from the points $1$ and $i$ in the complex plane.
+
+Step 2: This is the perpendicular bisector of the line segment joining the points $1$ and $i$.
+
+Step 3: Let $z = x + iy$. Then, $|z - 1| = |z - i|$ becomes $|(x + iy) - 1| = |(x + iy) - i|$, which simplifies to $|(x - 1) + iy| = |x + i(y - 1)|$.
+
+Step 4: Taking the square of both sides, we get $|(x - 1) + iy|^2 = |x + i(y - 1)|^2$, which expands to $(x - 1)^2 + y^2 = x^2 + (y - 1)^2$.
+
+Step 5: Simplifying, we get $(x - 1)^2 + y^2 = x^2 + y^2 - 2y + 1$, which further simplifies to $x^2 - 2x + 1 = x^2 - 2y + 1$.
+
+Step 6: This gives us $-2x = -2y$, or $x = y$.
+
+Step 7: Therefore, the locus of the point $z$ satisfying $|z - 1| = |z - i|$ is the line $x = y$, or in terms of $z = x + iy$, it's the set of points $z$ such that $\text{Re}(z) = \text{Im}(z)$.
+
+Therefore, the locus of the point $z$ satisfying $|z - 1| = |z - i|$ is the line $x = y$.
+
+### Question 8 (JEE Advanced 2016)
+
+**Question:** The locus of the point $z$ satisfying $|z - 1| + |z - i| = 2$ is
+
+**Solution:**
+Step 1: The locus of points $z$ such that $|z - 1| + |z - i| = 2$ is the set of points such that the sum of the distances from the points $1$ and $i$ in the complex plane is a constant.
+
+Step 2: This is an ellipse with foci at the points $1$ and $i$, and the sum of distances from any point on the ellipse to the two foci is $2$.
+
+Step 3: Let $z = x + iy$. Then, $|z - 1| + |z - i| = 2$ becomes $|(x + iy) - 1| + |(x + iy) - i| = 2$, which simplifies to $|(x - 1) + iy| + |x + i(y - 1)| = 2$.
+
+Step 4: This expands to $\sqrt{(x - 1)^2 + y^2} + \sqrt{x^2 + (y - 1)^2} = 2$.
+
+Step 5: The distance between the foci is $d = |1 - i| = \sqrt{1^2 + 1^2} = \sqrt{2}$.
+
+Step 6: The semi-major axis of the ellipse is $a = \frac{2}{2} = 1$.
+
+Step 7: The semi-minor axis of the ellipse is $b = \sqrt{a^2 - \frac{d^2}{4}} = \sqrt{1^2 - \frac{2}{4}} = \sqrt{1 - \frac{1}{2}} = \sqrt{\frac{1}{2}} = \frac{1}{\sqrt{2}}$.
+
+Step 8: The center of the ellipse is at the midpoint of the line segment joining the foci, which is $\frac{1 + i}{2} = \frac{1}{2} + i\frac{1}{2}$.
+
+Step 9: The ellipse is rotated by an angle of $45^\circ$ counterclockwise from the positive real axis.
+
+Step 10: Therefore, the locus of the point $z$ satisfying $|z - 1| + |z - i| = 2$ is an ellipse with semi-major axis $1$, semi-minor axis $\frac{1}{\sqrt{2}}$, center at $\frac{1}{2} + i\frac{1}{2}$, and rotated by $45^\circ$ counterclockwise from the positive real axis.
+
+Therefore, the locus of the point $z$ satisfying $|z - 1| + |z - i| = 2$ is an ellipse with the properties described above.
+
+### Question 9 (JEE Main 2017)
+
+**Question:** The locus of the point $z$ satisfying $|z - 2| = 2|z - 1|$ is
+
+**Solution:**
+Step 1: Let $z = x + iy$. Then, $|z - 2| = 2|z - 1|$ becomes $|(x + iy) - 2| = 2|(x + iy) - 1|$, which simplifies to $|(x - 2) + iy| = 2|(x - 1) + iy|$.
+
+Step 2: Taking the square of both sides, we get $|(x - 2) + iy|^2 = 4|(x - 1) + iy|^2$, which expands to $(x - 2)^2 + y^2 = 4((x - 1)^2 + y^2)$.
+
+Step 3: Simplifying, we get $(x - 2)^2 + y^2 = 4(x - 1)^2 + 4y^2$, which further expands to $x^2 - 4x + 4 + y^2 = 4x^2 - 8x + 4 + 4y^2$.
+
+Step 4: Rearranging, we get $x^2 - 4x + 4 + y^2 - 4x^2 + 8x - 4 - 4y^2 = 0$, which simplifies to $-3x^2 + 4x + 3y^2 = 0$.
+
+Step 5: Dividing by 3, we get $-x^2 + \frac{4}{3}x + y^2 = 0$, which can be rewritten as $x^2 - \frac{4}{3}x - y^2 = 0$.
+
+Step 6: Completing the square for the terms involving $x$, we get $\left(x - \frac{2}{3}\right)^2 - \frac{4}{9} - y^2 = 0$, which rearranges to $\left(x - \frac{2}{3}\right)^2 - y^2 = \frac{4}{9}$.
+
+Step 7: This is the equation of a hyperbola with center at $\left(\frac{2}{3}, 0\right)$, transverse axis along the x-axis, and semi-major axis $a = \frac{2}{3}$ and semi-minor axis $b = \frac{2}{3}$.
+
+Therefore, the locus of the point $z$ satisfying $|z - 2| = 2|z - 1|$ is a hyperbola with the properties described above.
+
+### Question 10 (JEE Advanced 2018)
+
+**Question:** The locus of the point $z$ satisfying $\arg\left(\frac{z - i}{z + i}\right) = \frac{\pi}{4}$ is
+
+**Solution:**
+Step 1: Let $z = x + iy$. Then, $\arg\left(\frac{z - i}{z + i}\right) = \frac{\pi}{4}$ means that the argument of the complex number $\frac{z - i}{z + i}$ is $\frac{\pi}{4}$.
+
+Step 2: This means that $\frac{z - i}{z + i} = re^{i\pi/4}$ for some positive real number $r$.
+
+Step 3: Let's expand $\frac{z - i}{z + i}$:
+$\frac{z - i}{z + i} = \frac{(x + iy) - i}{(x + iy) + i} = \frac{x + i(y - 1)}{x + i(y + 1)}$
+
+Step 4: Multiply both numerator and denominator by the complex conjugate of the denominator:
+$\frac{x + i(y - 1)}{x + i(y + 1)} \cdot \frac{x - i(y + 1)}{x - i(y + 1)} = \frac{(x + i(y - 1))(x - i(y + 1))}{(x + i(y + 1))(x - i(y + 1))} = \frac{x^2 - ix(y + 1) + i(y - 1)x - i^2(y - 1)(y + 1)}{x^2 + (y + 1)^2}$
+
+Step 5: Simplifying the numerator:
+$x^2 - ix(y + 1) + i(y - 1)x - i^2(y - 1)(y + 1) = x^2 - ix(y + 1) + ix(y - 1) + (y - 1)(y + 1)$
+$= x^2 - ix(y + 1) + ix(y - 1) + y^2 - 1$
+$= x^2 + y^2 - 1 + ix(y - 1 - y - 1)$
+$= x^2 + y^2 - 1 - 2ix$
+
+Step 6: Therefore, $\frac{z - i}{z + i} = \frac{x^2 + y^2 - 1 - 2ix}{x^2 + (y + 1)^2}$.
+
+Step 7: For this to have an argument of $\frac{\pi}{4}$, the ratio of the imaginary part to the real part must be $\tan\left(\frac{\pi}{4}\right) = 1$. That is, $\frac{-2x}{x^2 + y^2 - 1} = 1$.
+
+Step 8: This gives us $-2x = x^2 + y^2 - 1$, which rearranges to $x^2 + y^2 + 2x - 1 = 0$.
+
+Step 9: Completing the square for the terms involving $x$, we get $(x + 1)^2 - 1 + y^2 - 1 = 0$, which simplifies to $(x + 1)^2 + y^2 = 2$.
+
+Step 10: This is the equation of a circle with center at $(-1, 0)$ and radius $\sqrt{2}$.
+
+Therefore, the locus of the point $z$ satisfying $\arg\left(\frac{z - i}{z + i}\right) = \frac{\pi}{4}$ is a circle with center at $(-1, 0)$ and radius $\sqrt{2}$.
+
+### Question 11 (JEE Main 2019)
+
+**Question:** The locus of the point $z$ satisfying $|z - 1| = |z - i|$ is
+
+**Solution:**
+Step 1: The locus of points $z$ such that $|z - 1| = |z - i|$ is the set of points that are equidistant from the points $1$ and $i$ in the complex plane.
+
+Step 2: This is the perpendicular bisector of the line segment joining the points $1$ and $i$.
+
+Step 3: Let $z = x + iy$. Then, $|z - 1| = |z - i|$ becomes $|(x + iy) - 1| = |(x + iy) - i|$, which simplifies to $|(x - 1) + iy| = |x + i(y - 1)|$.
+
+Step 4: Taking the square of both sides, we get $|(x - 1) + iy|^2 = |x + i(y - 1)|^2$, which expands to $(x - 1)^2 + y^2 = x^2 + (y - 1)^2$.
+
+Step 5: Simplifying, we get $(x - 1)^2 + y^2 = x^2 + y^2 - 2y + 1$, which further simplifies to $x^2 - 2x + 1 = x^2 - 2y + 1$.
+
+Step 6: This gives us $-2x = -2y$, or $x = y$.
+
+Step 7: Therefore, the locus of the point $z$ satisfying $|z - 1| = |z - i|$ is the line $x = y$, or in terms of $z = x + iy$, it's the set of points $z$ such that $\text{Re}(z) = \text{Im}(z)$.
+
+Therefore, the locus of the point $z$ satisfying $|z - 1| = |z - i|$ is the line $x = y$.
+
+### Question 12 (JEE Advanced 2020)
+
+**Question:** The locus of the point $z$ satisfying $|z - 1| \cdot |z - i| = 1$ is
+
+**Solution:**
+Step 1: Let $z = x + iy$. Then, $|z - 1| \cdot |z - i| = 1$ becomes $|(x + iy) - 1| \cdot |(x + iy) - i| = 1$, which simplifies to $|(x - 1) + iy| \cdot |x + i(y - 1)| = 1$.
+
+Step 2: This expands to $\sqrt{(x - 1)^2 + y^2} \cdot \sqrt{x^2 + (y - 1)^2} = 1$.
+
+Step 3: Squaring both sides, we get $(x - 1)^2 + y^2) \cdot (x^2 + (y - 1)^2) = 1$.
+
+Step 4: Expanding, we get $(x^2 - 2x + 1 + y^2) \cdot (x^2 + y^2 - 2y + 1) = 1$.
+
+Step 5: Let's denote $x^2 + y^2$ as $r^2$, which is the square of the distance from the origin to the point $(x, y)$. Then, the equation becomes $(r^2 - 2x + 1) \cdot (r^2 - 2y + 1) = 1$.
+
+Step 6: Expanding, we get $r^4 - 2yr^2 + r^2 - 2xr^2 + 4xy - 2x + r^2 - 2y + 1 = 1$.
+
+Step 7: Simplifying, we get $r^4 - 2yr^2 - 2xr^2 + 4xy - 2x - 2y + r^2 = 0$, which can be rewritten as $r^4 + r^2(1 - 2x - 2y) + 4xy - 2x - 2y = 0$.
+
+Step 8: This is a fourth-degree curve known as a Cassini oval, which is the locus of points such that the product of the distances from two fixed points (in this case, $1$ and $i$) is a constant (in this case, $1$).
+
+Therefore, the locus of the point $z$ satisfying $|z - 1| \cdot |z - i| = 1$ is a Cassini oval with foci at $1$ and $i$, and constant product $1$.

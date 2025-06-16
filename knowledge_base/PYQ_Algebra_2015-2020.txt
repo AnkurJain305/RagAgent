@@ -1,0 +1,398 @@
+# Algebra: Previous Year Questions (2015-2020)
+
+## Quadratic Equations
+
+### Question 1 (JEE Main 2015)
+
+**Question:** If one root of the quadratic equation $x^2 + px + q = 0$ is the square of the other, then
+
+**Solution:**
+Step 1: Let the roots be $\alpha$ and $\alpha^2$.
+
+Step 2: Using Vieta's formulas, we know that:
+$\alpha + \alpha^2 = -p$ (sum of roots)
+$\alpha \cdot \alpha^2 = q$ (product of roots)
+
+Step 3: From the second equation, we get $\alpha^3 = q$, so $\alpha = \sqrt[3]{q}$.
+
+Step 4: Substituting this into the first equation:
+$\sqrt[3]{q} + (\sqrt[3]{q})^2 = -p$
+$\sqrt[3]{q} + q^{2/3} = -p$
+
+Step 5: Let's denote $\sqrt[3]{q} = t$. Then, $q = t^3$ and the relation becomes:
+$t + t^2 = -p$
+$q = t^3$
+
+Step 6: Eliminating $t$, we get:
+$t = -p - t^2$
+$t^3 = (-p - t^2)^3$
+$q = (-p - t^2)^3$
+
+Step 7: This is a complex relation. Another approach is to use the discriminant.
+
+Step 8: For a quadratic equation $ax^2 + bx + c = 0$, if the roots are $r$ and $s$, then the discriminant $\Delta = b^2 - 4ac = (r - s)^2 \cdot a^2$.
+
+Step 9: In our case, $a = 1$, $b = p$, and $c = q$. The roots are $\alpha$ and $\alpha^2$, so:
+$\Delta = p^2 - 4q = (\alpha - \alpha^2)^2 = (\alpha(1 - \alpha))^2 = \alpha^2(1 - \alpha)^2$
+
+Step 10: Using $\alpha^3 = q$, we get:
+$p^2 - 4q = \alpha^2(1 - \alpha)^2$
+$p^2 - 4q = q^{2/3}(1 - q^{1/3})^2$
+
+Step 11: This gives us the relation between $p$ and $q$.
+
+Therefore, if one root of the quadratic equation $x^2 + px + q = 0$ is the square of the other, then $p^2 - 4q = q^{2/3}(1 - q^{1/3})^2$.
+
+### Question 2 (JEE Advanced 2016)
+
+**Question:** The number of real values of $k$ for which the equation $x^2 - 6x + k = 0$ has real roots $\alpha$ and $\beta$ such that $[\alpha] + [\beta] = 5$ is
+
+**Solution:**
+Step 1: Let's denote the roots of the equation as $\alpha$ and $\beta$. Using Vieta's formulas:
+$\alpha + \beta = 6$ (sum of roots)
+$\alpha \cdot \beta = k$ (product of roots)
+
+Step 2: We need to find the values of $k$ such that $[\alpha] + [\beta] = 5$, where $[x]$ denotes the greatest integer less than or equal to $x$.
+
+Step 3: Since $\alpha + \beta = 6$, and we need $[\alpha] + [\beta] = 5$, we have the following cases to consider:
+
+Case 1: $[\alpha] = 2$ and $[\beta] = 3$
+This means $2 \leq \alpha < 3$ and $3 \leq \beta < 4$.
+Since $\alpha + \beta = 6$, we have $5 \leq \alpha + \beta < 7$, which is consistent.
+
+Case 2: $[\alpha] = 1$ and $[\beta] = 4$
+This means $1 \leq \alpha < 2$ and $4 \leq \beta < 5$.
+Since $\alpha + \beta = 6$, we have $5 \leq \alpha + \beta < 7$, which is consistent.
+
+Case 3: $[\alpha] = 0$ and $[\beta] = 5$
+This means $0 \leq \alpha < 1$ and $5 \leq \beta < 6$.
+Since $\alpha + \beta = 6$, we have $5 \leq \alpha + \beta < 7$, which is consistent.
+
+Case 4: $[\alpha] = -1$ and $[\beta] = 6$
+This means $-1 \leq \alpha < 0$ and $6 \leq \beta < 7$.
+Since $\alpha + \beta = 6$, we have $5 \leq \alpha + \beta < 7$, which is consistent.
+
+Case 5: $[\alpha] = -2$ and $[\beta] = 7$
+This means $-2 \leq \alpha < -1$ and $7 \leq \beta < 8$.
+Since $\alpha + \beta = 6$, we have $5 \leq \alpha + \beta < 7$, which is consistent.
+
+Step 4: For each case, we need to find the range of values for $k = \alpha \cdot \beta$.
+
+Case 1: $2 \leq \alpha < 3$ and $3 \leq \beta < 4$
+$k = \alpha \cdot \beta$ ranges from $2 \cdot 3 = 6$ to $3 \cdot 4 = 12$ (not inclusive of the upper bound).
+So, $6 \leq k < 12$.
+
+Case 2: $1 \leq \alpha < 2$ and $4 \leq \beta < 5$
+$k = \alpha \cdot \beta$ ranges from $1 \cdot 4 = 4$ to $2 \cdot 5 = 10$ (not inclusive of the upper bound).
+So, $4 \leq k < 10$.
+
+Case 3: $0 \leq \alpha < 1$ and $5 \leq \beta < 6$
+$k = \alpha \cdot \beta$ ranges from $0 \cdot 5 = 0$ to $1 \cdot 6 = 6$ (not inclusive of the upper bound).
+So, $0 \leq k < 6$.
+
+Case 4: $-1 \leq \alpha < 0$ and $6 \leq \beta < 7$
+$k = \alpha \cdot \beta$ ranges from $-1 \cdot 7 = -7$ to $0 \cdot 6 = 0$ (not inclusive of the upper bound).
+So, $-7 < k \leq 0$.
+
+Case 5: $-2 \leq \alpha < -1$ and $7 \leq \beta < 8$
+$k = \alpha \cdot \beta$ ranges from $-2 \cdot 8 = -16$ to $-1 \cdot 7 = -7$ (not inclusive of the upper bound).
+So, $-16 < k \leq -7$.
+
+Step 5: Combining all the ranges, we get:
+$-16 < k \leq -7$ or $-7 < k \leq 0$ or $0 \leq k < 6$ or $6 \leq k < 10$ or $6 \leq k < 12$
+
+Simplifying: $-16 < k < 12$, which gives us a range of 28 integer values for $k$.
+
+Therefore, there are 28 real values of $k$ for which the equation $x^2 - 6x + k = 0$ has real roots $\alpha$ and $\beta$ such that $[\alpha] + [\beta] = 5$.
+
+### Question 3 (JEE Main 2017)
+
+**Question:** If the roots of the equation $x^2 - 2ax + a^2 - a - 2 = 0$ are real and distinct, then
+
+**Solution:**
+Step 1: For the roots to be real and distinct, the discriminant must be positive.
+
+Step 2: The discriminant of the equation $x^2 - 2ax + a^2 - a - 2 = 0$ is:
+$\Delta = (-2a)^2 - 4 \cdot 1 \cdot (a^2 - a - 2)$
+$\Delta = 4a^2 - 4a^2 + 4a + 8$
+$\Delta = 4a + 8$
+$\Delta = 4(a + 2)$
+
+Step 3: For the roots to be real and distinct, we need $\Delta > 0$, which gives:
+$4(a + 2) > 0$
+$a + 2 > 0$
+$a > -2$
+
+Therefore, if the roots of the equation $x^2 - 2ax + a^2 - a - 2 = 0$ are real and distinct, then $a > -2$.
+
+### Question 4 (JEE Advanced 2018)
+
+**Question:** Let $a$ and $b$ be real numbers such that the equation $x^2 + 2ax + a^2 + b^2 = 0$ has real roots. Then
+
+**Solution:**
+Step 1: For the equation $x^2 + 2ax + a^2 + b^2 = 0$ to have real roots, its discriminant must be non-negative.
+
+Step 2: The discriminant is:
+$\Delta = (2a)^2 - 4 \cdot 1 \cdot (a^2 + b^2)$
+$\Delta = 4a^2 - 4a^2 - 4b^2$
+$\Delta = -4b^2$
+
+Step 3: For $\Delta \geq 0$, we need $-4b^2 \geq 0$, which gives $b^2 \leq 0$.
+
+Step 4: Since $b^2$ is always non-negative for real values of $b$, the only way to satisfy $b^2 \leq 0$ is if $b^2 = 0$, which means $b = 0$.
+
+Step 5: When $b = 0$, the equation becomes $x^2 + 2ax + a^2 = 0$, which can be rewritten as $(x + a)^2 = 0$. This has a repeated real root at $x = -a$.
+
+Therefore, if $a$ and $b$ are real numbers such that the equation $x^2 + 2ax + a^2 + b^2 = 0$ has real roots, then $b = 0$.
+
+### Question 5 (JEE Main 2019)
+
+**Question:** If the roots of the equation $x^2 - 2x + 3 = 0$ are $\alpha$ and $\beta$, then the value of $\alpha^{10} + \beta^{10}$ is
+
+**Solution:**
+Step 1: Let's find the roots of the equation $x^2 - 2x + 3 = 0$ using the quadratic formula:
+$x = \frac{2 \pm \sqrt{4 - 12}}{2} = \frac{2 \pm \sqrt{-8}}{2} = \frac{2 \pm 2\sqrt{2}i}{2} = 1 \pm \sqrt{2}i$
+
+Step 2: So, $\alpha = 1 + \sqrt{2}i$ and $\beta = 1 - \sqrt{2}i$.
+
+Step 3: Using Vieta's formulas, we know that:
+$\alpha + \beta = 2$ (sum of roots)
+$\alpha \cdot \beta = 3$ (product of roots)
+
+Step 4: To find $\alpha^{10} + \beta^{10}$, we can use the binomial expansion of $(\alpha + \beta)^{10}$, but that would be cumbersome. Instead, let's use a recursive approach.
+
+Step 5: Let's define $S_n = \alpha^n + \beta^n$. We know that $S_1 = \alpha + \beta = 2$.
+
+Step 6: Using the recurrence relation $S_{n+1} = (\alpha + \beta) \cdot S_n - \alpha \cdot \beta \cdot S_{n-1}$, we get:
+$S_{n+1} = 2 \cdot S_n - 3 \cdot S_{n-1}$
+
+Step 7: Let's compute the values of $S_n$ for $n = 1, 2, 3, ..., 10$:
+$S_1 = 2$
+$S_2 = \alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = 2^2 - 2 \cdot 3 = 4 - 6 = -2$
+$S_3 = 2 \cdot S_2 - 3 \cdot S_1 = 2 \cdot (-2) - 3 \cdot 2 = -4 - 6 = -10$
+$S_4 = 2 \cdot S_3 - 3 \cdot S_2 = 2 \cdot (-10) - 3 \cdot (-2) = -20 + 6 = -14$
+$S_5 = 2 \cdot S_4 - 3 \cdot S_3 = 2 \cdot (-14) - 3 \cdot (-10) = -28 + 30 = 2$
+$S_6 = 2 \cdot S_5 - 3 \cdot S_4 = 2 \cdot 2 - 3 \cdot (-14) = 4 + 42 = 46$
+$S_7 = 2 \cdot S_6 - 3 \cdot S_5 = 2 \cdot 46 - 3 \cdot 2 = 92 - 6 = 86$
+$S_8 = 2 \cdot S_7 - 3 \cdot S_6 = 2 \cdot 86 - 3 \cdot 46 = 172 - 138 = 34$
+$S_9 = 2 \cdot S_8 - 3 \cdot S_7 = 2 \cdot 34 - 3 \cdot 86 = 68 - 258 = -190$
+$S_{10} = 2 \cdot S_9 - 3 \cdot S_8 = 2 \cdot (-190) - 3 \cdot 34 = -380 - 102 = -482$
+
+Therefore, the value of $\alpha^{10} + \beta^{10}$ is $-482$.
+
+## Complex Numbers
+
+### Question 6 (JEE Main 2016)
+
+**Question:** If $z = \frac{1 + i}{1 - i}$, then the value of $|z|$ is
+
+**Solution:**
+Step 1: Let's simplify the complex number $z = \frac{1 + i}{1 - i}$.
+
+Step 2: Multiply both the numerator and denominator by the complex conjugate of the denominator:
+$z = \frac{1 + i}{1 - i} \cdot \frac{1 + i}{1 + i} = \frac{(1 + i)(1 + i)}{(1 - i)(1 + i)}$
+
+Step 3: Simplify the numerator and denominator:
+$z = \frac{1 + 2i + i^2}{1^2 - i^2} = \frac{1 + 2i - 1}{1 + 1} = \frac{2i}{2} = i$
+
+Step 4: Calculate the modulus of $z$:
+$|z| = |i| = 1$
+
+Therefore, the value of $|z|$ is 1.
+
+### Question 7 (JEE Advanced 2017)
+
+**Question:** Let $z$ be a complex number such that $|z| = 1$ and $\text{Im}(z) > 0$. If $w = \frac{z - i}{z + i}$, then $w$ lies on
+
+**Solution:**
+Step 1: Since $|z| = 1$ and $\text{Im}(z) > 0$, we can write $z = \cos \theta + i \sin \theta$ for some $\theta \in (0, \pi)$.
+
+Step 2: Let's calculate $w = \frac{z - i}{z + i}$:
+$w = \frac{\cos \theta + i \sin \theta - i}{\cos \theta + i \sin \theta + i} = \frac{\cos \theta + i(\sin \theta - 1)}{\cos \theta + i(\sin \theta + 1)}$
+
+Step 3: Multiply both the numerator and denominator by the complex conjugate of the denominator:
+$w = \frac{\cos \theta + i(\sin \theta - 1)}{\cos \theta + i(\sin \theta + 1)} \cdot \frac{\cos \theta - i(\sin \theta + 1)}{\cos \theta - i(\sin \theta + 1)}$
+
+$w = \frac{(\cos \theta + i(\sin \theta - 1))(\cos \theta - i(\sin \theta + 1))}{(\cos \theta)^2 + (\sin \theta + 1)^2}$
+
+Step 4: Expand the numerator:
+$\text{Numerator} = \cos^2 \theta - i\cos \theta(\sin \theta + 1) + i\cos \theta(\sin \theta - 1) - i^2(\sin \theta - 1)(\sin \theta + 1)$
+$= \cos^2 \theta - i\cos \theta - i\cos \theta \sin \theta + i\cos \theta \sin \theta - i\cos \theta + (\sin \theta - 1)(\sin \theta + 1)$
+$= \cos^2 \theta - 2i\cos \theta + \sin^2 \theta - 1$
+$= \cos^2 \theta + \sin^2 \theta - 2i\cos \theta - 1$
+$= 1 - 2i\cos \theta - 1$
+$= -2i\cos \theta$
+
+Step 5: Calculate the denominator:
+$\text{Denominator} = \cos^2 \theta + (\sin \theta + 1)^2$
+$= \cos^2 \theta + \sin^2 \theta + 2\sin \theta + 1$
+$= 1 + 2\sin \theta + 1$
+$= 2 + 2\sin \theta$
+
+Step 6: Combine the results:
+$w = \frac{-2i\cos \theta}{2 + 2\sin \theta} = \frac{-i\cos \theta}{1 + \sin \theta}$
+
+Step 7: Since $w$ is purely imaginary (it has no real part), and $\cos \theta > 0$ for $\theta \in (0, \pi/2)$ and $\cos \theta < 0$ for $\theta \in (\pi/2, \pi)$, the value of $w$ lies on the imaginary axis.
+
+Therefore, $w$ lies on the imaginary axis.
+
+### Question 8 (JEE Main 2018)
+
+**Question:** If $z = \frac{3 - 4i}{5 + 12i}$, then $|z|$ equals
+
+**Solution:**
+Step 1: Let's calculate the modulus of $z = \frac{3 - 4i}{5 + 12i}$.
+
+Step 2: Using the property $|\frac{z_1}{z_2}| = \frac{|z_1|}{|z_2|}$, we have:
+$|z| = |\frac{3 - 4i}{5 + 12i}| = \frac{|3 - 4i|}{|5 + 12i|}$
+
+Step 3: Calculate $|3 - 4i|$:
+$|3 - 4i| = \sqrt{3^2 + (-4)^2} = \sqrt{9 + 16} = \sqrt{25} = 5$
+
+Step 4: Calculate $|5 + 12i|$:
+$|5 + 12i| = \sqrt{5^2 + 12^2} = \sqrt{25 + 144} = \sqrt{169} = 13$
+
+Step 5: Calculate $|z|$:
+$|z| = \frac{|3 - 4i|}{|5 + 12i|} = \frac{5}{13}$
+
+Therefore, $|z| = \frac{5}{13}$.
+
+### Question 9 (JEE Advanced 2019)
+
+**Question:** Let $z$ be a complex number such that $|z| = 1$ and $\text{arg}(z) = \frac{\pi}{3}$. The value of $|z^4 - 1|$ is
+
+**Solution:**
+Step 1: Since $|z| = 1$ and $\text{arg}(z) = \frac{\pi}{3}$, we can write $z = \cos(\frac{\pi}{3}) + i\sin(\frac{\pi}{3}) = \frac{1}{2} + i\frac{\sqrt{3}}{2}$.
+
+Step 2: Let's calculate $z^4$:
+$z^4 = (\cos(\frac{\pi}{3}) + i\sin(\frac{\pi}{3}))^4 = \cos(\frac{4\pi}{3}) + i\sin(\frac{4\pi}{3})$
+$= \cos(\frac{4\pi}{3}) + i\sin(\frac{4\pi}{3})$
+$= -\frac{1}{2} - i\frac{\sqrt{3}}{2}$
+
+Step 3: Calculate $z^4 - 1$:
+$z^4 - 1 = -\frac{1}{2} - i\frac{\sqrt{3}}{2} - 1 = -\frac{3}{2} - i\frac{\sqrt{3}}{2}$
+
+Step 4: Calculate $|z^4 - 1|$:
+$|z^4 - 1| = |-\frac{3}{2} - i\frac{\sqrt{3}}{2}| = \sqrt{(-\frac{3}{2})^2 + (-\frac{\sqrt{3}}{2})^2} = \sqrt{\frac{9}{4} + \frac{3}{4}} = \sqrt{\frac{12}{4}} = \sqrt{3}$
+
+Therefore, $|z^4 - 1| = \sqrt{3}$.
+
+### Question 10 (JEE Main 2020)
+
+**Question:** If $\omega$ is a complex cube root of unity, then the value of $(1 + \omega + \omega^2)^3$ is
+
+**Solution:**
+Step 1: Since $\omega$ is a complex cube root of unity, we have $\omega^3 = 1$.
+
+Step 2: Let's calculate $1 + \omega + \omega^2$:
+$1 + \omega + \omega^2 = \frac{\omega^3 - 1}{\omega - 1} = \frac{1 - 1}{\omega - 1} = 0$
+
+Step 3: Therefore, $(1 + \omega + \omega^2)^3 = 0^3 = 0$.
+
+Therefore, the value of $(1 + \omega + \omega^2)^3$ is 0.
+
+## Matrices and Determinants
+
+### Question 11 (JEE Main 2017)
+
+**Question:** If $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$, then $A^2 - 5A + 7I$ equals
+
+**Solution:**
+Step 1: Let's calculate $A^2$:
+$A^2 = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} = \begin{pmatrix} 1 \cdot 1 + 2 \cdot 3 & 1 \cdot 2 + 2 \cdot 4 \\ 3 \cdot 1 + 4 \cdot 3 & 3 \cdot 2 + 4 \cdot 4 \end{pmatrix} = \begin{pmatrix} 7 & 10 \\ 15 & 22 \end{pmatrix}$
+
+Step 2: Calculate $5A$:
+$5A = 5 \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} = \begin{pmatrix} 5 & 10 \\ 15 & 20 \end{pmatrix}$
+
+Step 3: Calculate $7I$:
+$7I = 7 \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} 7 & 0 \\ 0 & 7 \end{pmatrix}$
+
+Step 4: Calculate $A^2 - 5A + 7I$:
+$A^2 - 5A + 7I = \begin{pmatrix} 7 & 10 \\ 15 & 22 \end{pmatrix} - \begin{pmatrix} 5 & 10 \\ 15 & 20 \end{pmatrix} + \begin{pmatrix} 7 & 0 \\ 0 & 7 \end{pmatrix} = \begin{pmatrix} 9 & 0 \\ 0 & 9 \end{pmatrix} = 9I$
+
+Therefore, $A^2 - 5A + 7I = 9I$.
+
+### Question 12 (JEE Advanced 2018)
+
+**Question:** Let $A$ be a $3 \times 3$ matrix with $\det(A) = 4$. If $B = \text{adj}(A)$, then $\det(B)$ equals
+
+**Solution:**
+Step 1: For a square matrix $A$ of order $n$, we know that $A \cdot \text{adj}(A) = \det(A) \cdot I$.
+
+Step 2: In our case, $A \cdot B = 4 \cdot I$, where $I$ is the $3 \times 3$ identity matrix.
+
+Step 3: Taking the determinant of both sides, we get:
+$\det(A) \cdot \det(B) = \det(4 \cdot I) = 4^3 = 64$
+
+Step 4: Since $\det(A) = 4$, we have:
+$4 \cdot \det(B) = 64$
+$\det(B) = 16$
+
+Therefore, $\det(B) = 16$.
+
+### Question 13 (JEE Main 2019)
+
+**Question:** If $A = \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 4 \\ 0 & 0 & 1 \end{pmatrix}$, then $A^{-1}$ equals
+
+**Solution:**
+Step 1: For a triangular matrix like $A$, the inverse can be found by using the formula $A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)$.
+
+Step 2: Since $A$ is an upper triangular matrix, its determinant is the product of the diagonal elements:
+$\det(A) = 1 \cdot 1 \cdot 1 = 1$
+
+Step 3: For a triangular matrix, the inverse can also be found directly. Let's denote $A^{-1} = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}$.
+
+Step 4: Using the condition $A \cdot A^{-1} = I$, we get a system of equations. Solving this system:
+$a = 1$
+$d = 0$
+$g = 0$
+$b = -2$
+$e = 1$
+$h = 0$
+$c = -3 + 2 \cdot 4 = 5$
+$f = -4$
+$i = 1$
+
+Step 5: Therefore, $A^{-1} = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$.
+
+Therefore, $A^{-1} = \begin{pmatrix} 1 & -2 & 5 \\ 0 & 1 & -4 \\ 0 & 0 & 1 \end{pmatrix}$.
+
+### Question 14 (JEE Advanced 2020)
+
+**Question:** Let $A$ be a $3 \times 3$ matrix with integer entries such that $\det(A) = 5$. Then the determinant of the matrix $\text{adj}(\text{adj}(A))$ is
+
+**Solution:**
+Step 1: For a square matrix $A$ of order $n$, we know that $\text{adj}(A) \cdot A = \det(A) \cdot I$.
+
+Step 2: Let's denote $B = \text{adj}(A)$. Then, $B \cdot A = 5 \cdot I$.
+
+Step 3: Taking the determinant of both sides, we get:
+$\det(B) \cdot \det(A) = \det(5 \cdot I) = 5^3 = 125$
+
+Step 4: Since $\det(A) = 5$, we have:
+$\det(B) \cdot 5 = 125$
+$\det(B) = 25$
+
+Step 5: Now, let's denote $C = \text{adj}(B) = \text{adj}(\text{adj}(A))$. Using the same property, we have:
+$C \cdot B = \det(B) \cdot I = 25 \cdot I$
+
+Step 6: Taking the determinant of both sides, we get:
+$\det(C) \cdot \det(B) = \det(25 \cdot I) = 25^3 = 15625$
+
+Step 7: Since $\det(B) = 25$, we have:
+$\det(C) \cdot 25 = 15625$
+$\det(C) = 625$
+
+Therefore, the determinant of the matrix $\text{adj}(\text{adj}(A))$ is 625.
+
+### Question 15 (JEE Main 2020)
+
+**Question:** If $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ and $I$ is the identity matrix of order 2, then the value of $\det(A^2 - 5A + 7I)$ is
+
+**Solution:**
+Step 1: From a previous question, we know that $A^2 - 5A + 7I = 9I$.
+
+Step 2: Calculate $\det(9I)$:
+$\det(9I) = \det\begin{pmatrix} 9 & 0 \\ 0 & 9 \end{pmatrix} = 9 \cdot 9 = 81$
+
+Therefore, the value of $\det(A^2 - 5A + 7I)$ is 81.

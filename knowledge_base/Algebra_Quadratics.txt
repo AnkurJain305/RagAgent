@@ -1,0 +1,157 @@
+# Algebra: Quadratic Equations and Functions
+
+## Standard Form of a Quadratic Equation
+
+A quadratic equation is an equation of the form:
+
+$$ax^2 + bx + c = 0$$
+
+where $a$, $b$, and $c$ are constants and $a \neq 0$.
+
+## Methods of Solving Quadratic Equations
+
+### 1. Factorization Method
+
+If the quadratic equation can be factored as $a(x - r)(x - s) = 0$, then the solutions are $x = r$ and $x = s$.
+
+Steps:
+1. Write the equation in standard form $ax^2 + bx + c = 0$
+2. Factor the left side as a product of two binomials
+3. Set each factor equal to zero and solve for $x$
+
+Example: Solve $x^2 - 5x + 6 = 0$
+
+Solution:
+- Factoring: $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$
+- Setting each factor to zero: $x - 2 = 0$ or $x - 3 = 0$
+- Solutions: $x = 2$ or $x = 3$
+
+### 2. Completing the Square
+
+Steps:
+1. Write the equation in the form $x^2 + \frac{b}{a}x = -\frac{c}{a}$
+2. Add $(\frac{b}{2a})^2$ to both sides
+3. Express the left side as a perfect square trinomial
+4. Solve for $x$
+
+Example: Solve $x^2 - 6x + 8 = 0$
+
+Solution:
+- Rearranging: $x^2 - 6x = -8$
+- Half of the coefficient of $x$ is $-3$, and $(-3)^2 = 9$
+- Adding 9 to both sides: $x^2 - 6x + 9 = -8 + 9 = 1$
+- Left side is now a perfect square: $(x - 3)^2 = 1$
+- Taking square root: $x - 3 = \pm 1$
+- Solutions: $x = 4$ or $x = 2$
+
+### 3. Quadratic Formula
+
+The solutions to $ax^2 + bx + c = 0$ are given by:
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+Example: Solve $2x^2 - 7x + 3 = 0$
+
+Solution:
+- Using the quadratic formula with $a = 2$, $b = -7$, and $c = 3$:
+- $x = \frac{7 \pm \sqrt{49 - 24}}{4} = \frac{7 \pm \sqrt{25}}{4} = \frac{7 \pm 5}{4}$
+- Solutions: $x = 3$ or $x = \frac{1}{2}$
+
+## Discriminant and Nature of Roots
+
+The discriminant $\Delta = b^2 - 4ac$ determines the nature of the roots:
+
+- If $\Delta > 0$, the equation has two distinct real roots
+- If $\Delta = 0$, the equation has one repeated real root (a double root)
+- If $\Delta < 0$, the equation has two complex conjugate roots
+
+## Properties of Quadratic Equations
+
+If $\alpha$ and $\beta$ are the roots of $ax^2 + bx + c = 0$, then:
+
+1. Sum of roots: $\alpha + \beta = -\frac{b}{a}$
+2. Product of roots: $\alpha \cdot \beta = \frac{c}{a}$
+3. $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta = \frac{b^2 - 2ac}{a^2}$
+4. $\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta) = -\frac{b^3 - 3abc}{a^3}$
+
+## Quadratic Functions and Their Graphs
+
+A quadratic function is a function of the form $f(x) = ax^2 + bx + c$ where $a \neq 0$.
+
+### Properties of the Graph (Parabola)
+
+1. The graph is a parabola
+2. If $a > 0$, the parabola opens upward; if $a < 0$, it opens downward
+3. The axis of symmetry is the vertical line $x = -\frac{b}{2a}$
+4. The vertex (highest or lowest point) is at $(-\frac{b}{2a}, f(-\frac{b}{2a}))$
+5. The y-intercept is at $(0, c)$
+6. The x-intercepts (if they exist) are at the solutions to $ax^2 + bx + c = 0$
+
+### Vertex Form
+
+The quadratic function can be written in vertex form as:
+
+$$f(x) = a(x - h)^2 + k$$
+
+where $(h, k)$ is the vertex of the parabola.
+
+To convert from standard form to vertex form:
+
+$$f(x) = ax^2 + bx + c = a(x - \frac{b}{2a})^2 + (c - \frac{b^2}{4a})$$
+
+## Common JEE Problems
+
+### Problem 1: Finding a Quadratic Equation Given Its Roots
+
+If $\alpha$ and $\beta$ are the roots of a quadratic equation, then the equation is:
+
+$$(x - \alpha)(x - \beta) = 0$$
+
+Expanding: $x^2 - (\alpha + \beta)x + \alpha\beta = 0$
+
+Example: Find the quadratic equation whose roots are 3 and -2.
+
+Solution:
+- Using the formula: $x^2 - (3 + (-2))x + 3 \cdot (-2) = 0$
+- Simplifying: $x^2 - x - 6 = 0$
+
+### Problem 2: Relationship Between Coefficients and Roots
+
+Example: If one root of $ax^2 + bx + c = 0$ is twice the other, find the relationship between the coefficients.
+
+Solution:
+- Let the roots be $r$ and $2r$
+- Using Vieta's formulas:
+  - $r + 2r = -\frac{b}{a}$, so $3r = -\frac{b}{a}$
+  - $r \cdot 2r = \frac{c}{a}$, so $2r^2 = \frac{c}{a}$
+- From the first equation: $r = -\frac{b}{3a}$
+- Substituting into the second equation: $2 \cdot (\frac{b}{3a})^2 = \frac{c}{a}$
+- Simplifying: $\frac{2b^2}{9a^2} = \frac{c}{a}$
+- Therefore: $2b^2 = 9ac$
+
+### Problem 3: Maximum/Minimum Value of a Quadratic Function
+
+The maximum/minimum value of $f(x) = ax^2 + bx + c$ occurs at $x = -\frac{b}{2a}$ and equals $f(-\frac{b}{2a}) = c - \frac{b^2}{4a}$.
+
+Example: Find the minimum value of $f(x) = 2x^2 - 8x + 9$.
+
+Solution:
+- Here, $a = 2$, $b = -8$, and $c = 9$
+- The minimum occurs at $x = -\frac{-8}{2 \cdot 2} = 2$
+- The minimum value is $f(2) = 2(2)^2 - 8(2) + 9 = 8 - 16 + 9 = 1$
+
+## Important Theorems and Results
+
+### Descartes' Rule of Signs
+
+For a polynomial with real coefficients:
+- The number of positive real roots is either equal to the number of sign changes in the coefficients, or less than that by an even number
+- The number of negative real roots is either equal to the number of sign changes in the polynomial with $x$ replaced by $-x$, or less than that by an even number
+
+### Rational Root Theorem
+
+If $\frac{p}{q}$ is a rational root of the polynomial equation $ax^n + bx^{n-1} + ... + k = 0$ with integer coefficients and $\gcd(p, q) = 1$, then $p$ divides the constant term $k$ and $q$ divides the leading coefficient $a$.
+
+### Location of Roots
+
+Cauchy's bound: If $x$ is a root of $ax^n + bx^{n-1} + ... + k = 0$, then $|x| < 1 + \max(|\frac{b}{a}|, |\frac{c}{a}|, ..., |\frac{k}{a}|)$.
